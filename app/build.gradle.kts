@@ -80,4 +80,5 @@ dependencies {
     coreLibraryDesugaring(libs.desugar)
 
     detektPlugins(libs.detektTwitterCompose)
+    detektPlugins(libs.detektRulesLibraries)
 }

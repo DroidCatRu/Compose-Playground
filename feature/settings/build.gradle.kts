@@ -68,4 +68,5 @@ dependencies {
     kapt(libs.hiltCompiler)
 
     detektPlugins(libs.detektTwitterCompose)
+    detektPlugins(libs.detektRulesLibraries)
 }

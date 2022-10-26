@@ -60,4 +60,5 @@ dependencies {
     debugImplementation(libs.debugComposeManifest)
 
     detektPlugins(libs.detektTwitterCompose)
+    detektPlugins(libs.detektRulesLibraries)
 }

@@ -62,6 +62,7 @@ composeMaterial3                    = { module = "androidx.compose.material3:mat
 composeNavigation                   = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
 composeNavigationHilt               = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "composeNavigationHilt" }
 desugar                             = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar" }
+detektRulesLibraries                = { module = "io.gitlab.arturbosch.detekt:detekt-rules-libraries", version.ref = "detekt"}
 detektTwitterCompose                = { module = "com.twitter.compose.rules:detekt", version.ref = "detektTwitterCompose" }
 hilt                                = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hiltCompiler                        = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
