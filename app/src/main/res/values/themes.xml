@@ -4,7 +4,6 @@
     <style name="Theme.ComposePlayground" parent="Theme.Material3.DayNight" />
 
     <style name="Theme.ComposePlayground.AppStarting" parent="Theme.SplashScreen.IconBackground">
-        <item name="windowSplashScreenBackground">@color/design_default_color_background</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <item name="windowSplashScreenIconBackgroundColor">@color/teal_200</item>
         <item name="postSplashScreenTheme">@style/Theme.ComposePlayground</item>
