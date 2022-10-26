@@ -3,7 +3,18 @@ name: Tests on master branch
 on:
   push:
     branches:
-      - master
+      - 'master'
+    paths-ignore:
+      - 'README.md'
+      - '.github/**'
+      - 'renovate.json'
+  pull_request:
+    branches:
+      - 'master'
+    paths-ignore:
+      - 'README.md'
+      - '.github/**'
+      - 'renovate.json'
 
 jobs:
   test:
