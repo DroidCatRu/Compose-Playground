@@ -1,4 +1,4 @@
-name: Test on PR or push to master
+name: Tests on master branch
 
 on:
   push:
