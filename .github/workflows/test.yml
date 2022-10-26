@@ -1,15 +1,14 @@
-name: CI workflow
+name: Test on PR or push to master
 
 on:
   push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
 
 jobs:
-  build:
+  test:
+    name: KtLint, detekt and unit-tests
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -20,27 +19,23 @@ jobs:
       - name: Setup JDK environment
         uses: actions/setup-java@v3
         with:
-          java-version: '11'
-          distribution: 'zulu'
+          java-version: 11
+          distribution: zulu
           
       - name: Make gradlew executable
         run: chmod +x ./gradlew
+        
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
 
       - name: Run KtLint
         run: ./gradlew lintKotlin
 
       - name: Run Detekt
         run: ./gradlew detekt
-        
-      - name: Assemble app
-        uses: ./gradlew assembleDebug --stacktrace
 
       - name: Run unit tests
-        uses: ./gradlew check --stacktrace
-
-      - name: Run instrumentation tests
-        uses: ReactiveCircus/android-emulator-runner@v2
-        with:
-          api-level: 24
-          disable-animations: false
-          script: ./gradlew connectedCheck --stacktrace
+        run: ./gradlew check
+        
+      - name: Build debug
+        run: ./gradlew assembleDebug --stacktrace
