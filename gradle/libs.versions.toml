@@ -32,7 +32,7 @@ timber                              = "5.0.1"
 # test libraries
 testJunit                           = "5.9.1"
 testMockk                           = "1.13.2"
-testTurbine                         = "0.12.0"
+testTurbine                         = "0.12.1"
 
 # android test libraries
 testAndroidCore                     = "1.5.0-rc01" # fix crash on Android 13 - https://developer.android.com/jetpack/androidx/releases/test#core_150_2
