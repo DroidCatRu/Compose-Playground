@@ -5,7 +5,7 @@ detekt                              = "1.22.0-RC3"
 detektTwitterCompose                = "0.0.24"
 junit                               = "1.8.2.1"
 ksp                                 = "1.7.20-1.0.8"
-ktLint                              = "3.12.0"
+ktLint                              = "3.16.0"
 
 # production libraries
 coil                                = "2.2.2"
