@@ -31,7 +31,7 @@ timber                              = "5.0.1"
 
 # test libraries
 testJunit                           = "5.9.1"
-testMockk                           = "1.13.2"
+testMockk                           = "1.13.13"
 testTurbine                         = "0.12.1"
 
 # android test libraries
